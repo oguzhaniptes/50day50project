@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    background: no-repeat center/cover url(/05_bulanikloadingekrani/gtr.jpg);
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    width: 100vw;
+    height: 50.7vw;
+    z-index: -1;
+    filter: blur(0px);
+}
+.loading-text{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 54;
+}
