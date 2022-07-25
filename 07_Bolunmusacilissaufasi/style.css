@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --left-bg-color:rgba(60, 0, 0, 0.8);
+    --right-bg-color: rgba(0, 0, 60, 0.8);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 2000ms
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    font-size: 20;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
+    white-space: nowrap;
+}
+.container{
+    position: relative;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+}
+.split{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+.split.left{
+    left: 0;
+    background: no-repeat center/cover url(/07_Bolunmusacilissaufasi/front-end-word-concepts-banner-web-applications-programming_106317-84-600x401.jpg);
+}
+.split.left::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+.split.right{
+    right: 0;
+    background: no-repeat center/cover url(/07_Bolunmusacilissaufasi/backend-developer-dizibrand.png);
+}
+.split.right::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+.button{
+    font-size: 18;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: solid 2px;
+    border-radius: 12px;
+    padding: 1.1rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.split.right .button:hover{
+    color: black;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-color: transparent;
+    box-shadow: none;
+}
+.split.left .button:hover{
+    color: black;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-color: transparent;
+    box-shadow: none;
+}
+.hover-left .left{
+    width: var(--hover-width);
+}
+.hover-left .right{
+    width: var(--other-width);
+}
+.hover-right .right{
+    width: var(--hover-width);
+}
+.hover-right .left{
+    width: var(--other-width);
+}
+.split.left, .split.right, .split.left::before, .split.right::before{
+    transition: all var(--speed) ease-in-out;
+}
+@media(max-width: 900px){
+    h1{
+        font-size: 1.5rem;;
+    }
+    .button{
+        padding: 1.1rem;
+        width: 12rem;
+    }
+}
