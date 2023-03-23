@@ -1,0 +1,85 @@
+.button-green{
+    background-color: rgb(64, 255, 47);
+    width: 100%;
+}
+
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol{
+    list-style-type: none;
+}
+
+body,
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+.container{
+    background-color: white;
+    padding: 30px;
+}
+
+input{
+    padding: 15px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+}
+
+nav.productListTitle ul{
+    display: flex;
+    padding: 10px;
+    background: #ddd;
+    text-align: center;
+    
+}
+nav.productListTitle ul li,
+nav.productList ul li{
+    width: 24%;
+    text-align: center;
+}
+
+nav.productList ul {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+
+.Error{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    margin-bottom: 16px;
+}
+.Complated{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    margin-bottom: 16px;
+}
+.Deleted{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    margin-bottom: 16px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Arrangement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="productForm">
+        <input type="text" placeholder="Product Name" id="name">
+        <input type="text" placeholder="Product Model" id="model">
+        <input type="text" placeholder="Product Price" id="price">
+        <button id="submit" class="button-green">Add</button>
+    </form>
+
+    <div id="productlist">
+        <nav class="productListTitle">
+            <ul>
+                <li>Brand</li>
+                <li>Model</li>
+                <li>Price</li>
+                <li>Delete</li>
+            </ul>
+        </nav>
+        <nav class="productList"></nav>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
